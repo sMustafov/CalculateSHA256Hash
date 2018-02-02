@@ -15,7 +15,7 @@ namespace CalculateSHA256Hash
 
         public static string getHashSha256(string text)
         {
-            byte[] bytes = Encoding.Unicode.GetBytes(text);
+            byte[] bytes = Encoding.UTF8.GetBytes(text);
 
             SHA256Managed hashstring = new SHA256Managed();
 
